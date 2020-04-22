@@ -59,8 +59,8 @@ def query_product_quantity_test():
 
 
 def query_product_quantity_test_app():
-    db = pymysql.connect(host="192.168.31.223", port=6610, user="qph_b2c",
-                         password="zhaoyl(1181*%P)", db="taobao")
+    db = pymysql.connect(host="", port=6610, user="",
+                         password="", db="")
     cursor = db.cursor()
     sql = '''SELECT COUNT(*) FROM {};'''.format(SAVE_BRAND_SHOP_TABLE_NAME)
     cursor.execute(sql)
@@ -82,8 +82,8 @@ def query_product_quantity_test_app():
 
 
 def query_product_quantity_test_pc():
-    db = pymysql.connect(host="192.168.31.223", port=6610, user="qph_b2c",
-                         password="zhaoyl(1181*%P)", db="taobao")
+    db = pymysql.connect(host="", port=, user="",
+                         password="", db="")
     cursor = db.cursor()
     sql = '''SELECT COUNT(*) FROM {};'''.format(SAVE_BRAND_SHOP_TABLE_NAME_PC)
     cursor.execute(sql)
@@ -106,8 +106,8 @@ def query_product_quantity_test_pc():
 
 
 def query_product_quantity_taobao_list_web():
-    db = pymysql.connect(host="192.168.31.223", port=6610, user="qph_b2c",
-                         password="zhaoyl(1181*%P)", db="taobao_data")
+    db = pymysql.connect(host="", port=6610, user="",
+                         password="z", db="")
     cursor = db.cursor()
     sql = '''SELECT COUNT(*) FROM {};'''.format(SAVE_TAOBAO_LIST_WEB_DATA_TABLE)
     cursor.execute(sql)
