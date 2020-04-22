@@ -12,10 +12,10 @@ from aiomysql import create_pool
 loop = asyncio.get_event_loop()
 async def go():
     # 用异步 创建池
-    async with create_pool(host='192.168.31.223', port=6610,
-    # pool await aiomysql.create_pool(host='192.168.31.223', port=6610,
-                           user='qph_b2c', password='zhaoyl(1181*%P)',
-                           db='taobao20190813test', loop=loop) as pool:
+    async with create_pool(host='', port=6610,
+    # pool await aiomysql.create_pool(host='', port=6610,
+                           user='', password='',
+                           db='', loop=loop) as pool:
 
         async with pool.get() as conn:
             async with conn.cursor() as cur:
@@ -34,9 +34,9 @@ import asyncio
 import aiomysql
 
 async def test_example(loop):
-    pool = await aiomysql.create_pool(host='192.168.31.223', port=6610,
-                           user='qph_b2c', password='zhaoyl(1181*%P)',
-                           db='taobao20190813test', loop=loop)
+    pool = await aiomysql.create_pool(host='', port=6610,
+                           user='', password='',
+                           db='', loop=loop)
     # 用异步池获得 连接器
     async with pool.acquire() as conn:
         # 异步游标
