@@ -4,34 +4,20 @@
 # @Author  : Mqz
 # @FileName: insert_taobao_param.py
 import datetime
-# 处理阿里云数据库mysql的数据
 from common import mysqlutils
 
 config1 = {
-  #   阿里云服务器
-  "host": "47.110.248.195",
-  "user": "zhaoyl_et",
-  "password": "Z#p*688%Et",
-  "db": "et_crawl_taobao",
+
+  "host": "",
+  "user": "",
+  "password": "",
+  "db": "",
   "charset": "utf8",
   "port": 6610
 }
 db_util1 = mysqlutils.MysqlUtil(config_dict=config1, pool_size=10)
 
 
-# config = {
-#     # 公司测试机器
-#     "host": "192.168.31.223",
-#     "user": "qph_b2c",
-#     "password": "zhaoyl(1181*%P)",
-#     # "db": "taobao",
-#     "db": "taobao20190813test",
-#     "charset": "utf8",
-#     "port": 6610
-# }
-# # 本地数据库
-# db_util = mysqlutils.MysqlUtil(config_dict=config, pool_size=10)
-#
 
 def insert_mysql(cat_info):
     '''
