@@ -5,11 +5,10 @@
 from common import mysqlutils
 
 config1 = {
-  #   阿里云服务器
-  "host": "47.110.248.195",
-  "user": "zhaoyl_et",
-  "password": "Z#p*688%Et",
-  "db": "et_crawl_taobao",
+  "host": "",
+  "user": "",
+  "password": "",
+  "db": "",
   "charset": "utf8",
   "port": 6610
 }
