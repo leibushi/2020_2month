@@ -36,9 +36,9 @@ config = {
 db_util = mysqlutils.MysqlUtil(config_dict=config, pool_size=10)
 
 # mongodb 数据库
-client = pymongo.MongoClient('mongodb://47.110.248.195:27017/')
+client = pymongo.MongoClient('mongodb://:27017/')
 db = client['taobao']
-db.authenticate("taobao", "et78%20Aytb")
+db.authenticate("taobao", "")
 
 def get_datas(limit):
 # def get_data():
