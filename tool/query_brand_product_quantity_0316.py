@@ -36,8 +36,8 @@ def query_product_quantity():
 
 
 def query_product_quantity_test():
-    db = pymysql.connect(host="192.168.31.223", port=6610, user="qph_b2c",
-                         password="zhaoyl(1181*%P)", db="taobao")
+    db = pymysql.connect(host="", port=6610, user="",
+                         password="", db="")
     cursor = db.cursor()
     sql = '''SELECT COUNT(*) FROM {};'''.format(SAVE_BRAND_SHOP_TABLE_NAME)
     cursor.execute(sql)
