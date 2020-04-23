@@ -12,25 +12,25 @@ from common import mysqlutils
 
 
 config1 = {
-    # 阿里云数据库
-    "host": "47.110.248.195",
-    "user": "zhaoyl_et",
-    "password": "Z#p*688%Et",
-    "db": "et_crawl_taobao",
+
+    "host": "",
+    "user": "",
+    "password": "",
+    "db": "",
     "charset": "utf8",
-    "port": 6610
+    "port": 
 }
 db_util1 = mysqlutils.MysqlUtil(config_dict=config1, pool_size=10)
 
 config = {
     # 测试机
-    "host": "192.168.31.223",
-    "user": "qph_b2c",
-    "password": "zhaoyl(1181*%P)",
-    # "db": "taobao",
-    "db": "taobao20190813test",
+    "host": "",
+    "user": "",
+    "password": "",
+    # "db": "",
+    "db": "",
     "charset": "utf8",
-    "port": 6610
+    "port": 
 }
 
 db_util = mysqlutils.MysqlUtil(config_dict=config, pool_size=10)
